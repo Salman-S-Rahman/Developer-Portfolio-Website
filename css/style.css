@@ -1,31 +1,105 @@
-body{
-    font-family: 'Poppins', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
 }
-#header_part{
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+/* ========== common css end ========= */
+section {
+    margin-bottom: 70px;
+}
+
+.flexible_container {
     display: flex;
+}
+
+.nav_area {
+    display: flex;
+    margin: 0 80px;
+    padding: 10px 0;
+}
+
+.nav_logo {
+    width: 30%;
+}
+
+.nav_logo a {
+    font-family: 'Qwitcher Grypen', cursive;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 700;
+    color: #FF3786;
+}
+
+.nav_menu {
+    width: 70%;
+}
+
+.nav_menu ul {
+    float: right;
+}
+
+.nav_menu ul li {
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav_menu ul li a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #FF3786;
+}
+
+#header_part {
     background: url('../images/top-banner.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding:50px 0;
+    padding: 50px 0;
+
 }
-.half_width{
+
+#header_part h1,
+h3 {
+    margin-bottom: 30px;
+}
+
+.half_width {
     width: 45%;
-    padding-left:5%;
+    padding-left: 5%;
 }
-.half_width h1{
-    font-size: 45px;
+
+.extra_color {
+    color: #FF3786;
 }
-.header_span{
-    color:#FF3786;
+
+#header_part p {
+    color: gray
 }
-.header_img{
-    width:80%;
-    text-align: left;
-   
+
+.header_img {
+    padding-top: 50px;
+    width: 90%;
+
+
 }
-.hire_link{
+
+.hire_link {
     text-decoration: none;
-    padding:10px 40px;
+    padding: 10px 40px;
     background-image: linear-gradient(tomato, #FF4991);
     font-size: 17px;
     font-weight: 500;
@@ -36,15 +110,80 @@ body{
     margin-top: 30px;
 }
 
-#dream_part{
-    display: flex;
-    background: url('../images/top-banner.png');
+/* ============= header part end =========== */
+
+#dream_part {
+    background: url('../images/dream-bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding:50px 0;
+    background-position: right;
+    padding: 50px 0;
 }
-.dream_img{
-    width:80%;
-    text-align: left; 
+
+#dream_part h1,
+h3 {
+    margin-bottom: 30px;
 }
+
+.dream_img {
+    width: 90%;
+    text-align: left;
+}
+
+#dream_part p {
+    width: 500px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* ============== dream part end =========== */
+#experience_part h1 {
+    margin-bottom: 30px;
+}
+
+.full_stack {
+    padding: 30px;
+    box-shadow: 1px 5px 22px 4px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, salmon, tomato);
+    border-image-slice: 1;
+}
+
+.full_stack p {
+    margin: 20px 0;
+}
+
+.baby_developer {
+    padding: 30px;
+    box-shadow: 1px 5px 22px 4px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
+}
+
+.baby_developer p {
+    margin: 20px 0;
+}
+
+.experience_area {
+    background: url('../images/exp-bg.png');
+    background-repeat: no-repeat;
+}
+
+/* ============== experience part end =========== */
+
+#footer_part {
+    margin-top: 150px;
+}
+
+#footer_part p {
+    text-align: center;
+    color: gray;
+}
+
+/* ============= footer part end ============= */
